@@ -1,13 +1,17 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Courirer New', monospace;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background: linear-gradient(to right, #6DD5FA, #FF758C);
+    background: linear-gradient(to bottom right, #00F2FF, #5B1973);
     color: #333;
+  }
+
+  h1 {
+    font-family: 'Courier New', monospace;
   }
   
   #todo-app {
@@ -30,7 +34,8 @@ body {
   
   #todo-form button {
     padding: 10px 20px;
-    background-color: #5F9EA0;
+    margin: 5px 0 0 0;
+    background-color: #75c5c8;
     color: white;
     border: none;
     border-radius: 4px;
@@ -39,7 +44,7 @@ body {
   }
   
   #todo-form button:hover {
-    background-color: #4682B4;
+    background-color: #072843;
   }
   
   #todo-list {
