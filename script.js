@@ -51,7 +51,9 @@ function addTask(task) {
  
       if (isEditing) {
          
-          taskText.textContent = this.previousSibling.value;
+          listItem.insertBefore(taskText, checkBox)
+          taskText.textContent = taskText.previousSibling.value;
+          listItem.removeChild(taskText.previousSibling)
           listItem.classList.remove('editing');
           editButton.textContent = 'Edit';
       } else {
